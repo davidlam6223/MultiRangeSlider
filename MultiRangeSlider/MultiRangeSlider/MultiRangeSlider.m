@@ -126,6 +126,16 @@
 }
 
 -(void) setUpTouchingThumb: (int)index{
+    int tmp = self.maximumValue;
+    while(index>0){
+        if([self getValueWithIndex:index] == tmp && [self getValueWithIndex:index-1] >= tmp-5){
+            index--;
+            tmp = [self getValueWithIndex:index];
+        }
+        else{
+            break;
+        }
+    }
     _touchingThumb = [_thumbs objectAtIndex:index];
     _touchingIndex = index;
     if(index+1 < self.numberOfThumbs){
@@ -151,7 +161,6 @@
 - (int)getXFromValue:(int)value{
     return round(value*_interval+padding);
 }
-
 #pragma mark - public method
 - (void)setThumb:(int)index To:(int)value{
     [self setUpTouchingThumb: index];
