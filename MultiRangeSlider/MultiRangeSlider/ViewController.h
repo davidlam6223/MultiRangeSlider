@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ViewController : UIViewController
+#import "MultiRangeSlider.h"
+@interface ViewController : UIViewController<MultiRangeSliderDelegate>
 
 
 @end

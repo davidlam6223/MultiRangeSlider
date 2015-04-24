@@ -14,6 +14,11 @@
 		00F658551ADFB68A00D315FD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00F658541ADFB68A00D315FD /* Images.xcassets */; };
 		00F658581ADFB68A00D315FD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00F658561ADFB68A00D315FD /* LaunchScreen.xib */; };
 		00F658641ADFB68A00D315FD /* MultiRangeSliderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F658631ADFB68A00D315FD /* MultiRangeSliderTests.m */; };
+		00F658701ADFB7F300D315FD /* MultiRangeSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F6586F1ADFB7F300D315FD /* MultiRangeSlider.m */; };
+		00F6587D1ADFC32600D315FD /* handle-hover.png in Resources */ = {isa = PBXBuildFile; fileRef = 00F658751ADFC32600D315FD /* handle-hover.png */; };
+		00F6587E1ADFC32600D315FD /* handle-hover@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00F658761ADFC32600D315FD /* handle-hover@2x.png */; };
+		00F6587F1ADFC32600D315FD /* handle.png in Resources */ = {isa = PBXBuildFile; fileRef = 00F658771ADFC32600D315FD /* handle.png */; };
+		00F658801ADFC32600D315FD /* handle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00F658781ADFC32600D315FD /* handle@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,12 @@
 		00F6585D1ADFB68A00D315FD /* MultiRangeSliderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultiRangeSliderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00F658621ADFB68A00D315FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00F658631ADFB68A00D315FD /* MultiRangeSliderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultiRangeSliderTests.m; sourceTree = "<group>"; };
+		00F6586E1ADFB7F300D315FD /* MultiRangeSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiRangeSlider.h; sourceTree = "<group>"; };
+		00F6586F1ADFB7F300D315FD /* MultiRangeSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiRangeSlider.m; sourceTree = "<group>"; };
+		00F658751ADFC32600D315FD /* handle-hover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "handle-hover.png"; sourceTree = "<group>"; };
+		00F658761ADFC32600D315FD /* handle-hover@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "handle-hover@2x.png"; sourceTree = "<group>"; };
+		00F658771ADFC32600D315FD /* handle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = handle.png; sourceTree = "<group>"; };
+		00F658781ADFC32600D315FD /* handle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "handle@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +92,7 @@
 		00F658461ADFB68A00D315FD /* MultiRangeSlider */ = {
 			isa = PBXGroup;
 			children = (
+				00F6586D1ADFB7DA00D315FD /* Lib */,
 				00F6584B1ADFB68A00D315FD /* AppDelegate.h */,
 				00F6584C1ADFB68A00D315FD /* AppDelegate.m */,
 				00F6584E1ADFB68A00D315FD /* ViewController.h */,
@@ -96,6 +108,10 @@
 		00F658471ADFB68A00D315FD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				00F658751ADFC32600D315FD /* handle-hover.png */,
+				00F658761ADFC32600D315FD /* handle-hover@2x.png */,
+				00F658771ADFC32600D315FD /* handle.png */,
+				00F658781ADFC32600D315FD /* handle@2x.png */,
 				00F658481ADFB68A00D315FD /* Info.plist */,
 				00F658491ADFB68A00D315FD /* main.m */,
 			);
@@ -117,6 +133,15 @@
 				00F658621ADFB68A00D315FD /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		00F6586D1ADFB7DA00D315FD /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				00F6586E1ADFB7F300D315FD /* MultiRangeSlider.h */,
+				00F6586F1ADFB7F300D315FD /* MultiRangeSlider.m */,
+			);
+			name = Lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,9 +224,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00F6587D1ADFC32600D315FD /* handle-hover.png in Resources */,
 				00F658531ADFB68A00D315FD /* Main.storyboard in Resources */,
 				00F658581ADFB68A00D315FD /* LaunchScreen.xib in Resources */,
+				00F6587E1ADFC32600D315FD /* handle-hover@2x.png in Resources */,
 				00F658551ADFB68A00D315FD /* Images.xcassets in Resources */,
+				00F6587F1ADFC32600D315FD /* handle.png in Resources */,
+				00F658801ADFC32600D315FD /* handle@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00F658701ADFB7F300D315FD /* MultiRangeSlider.m in Sources */,
 				00F658501ADFB68A00D315FD /* ViewController.m in Sources */,
 				00F6584D1ADFB68A00D315FD /* AppDelegate.m in Sources */,
 				00F6584A1ADFB68A00D315FD /* main.m in Sources */,
@@ -297,7 +327,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -332,7 +362,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -344,6 +374,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MultiRangeSlider/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -354,6 +385,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MultiRangeSlider/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -412,6 +444,7 @@
 				00F658691ADFB68A00D315FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		00F6586A1ADFB68A00D315FD /* Build configuration list for PBXNativeTarget "MultiRangeSliderTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +453,7 @@
 				00F6586C1ADFB68A00D315FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
